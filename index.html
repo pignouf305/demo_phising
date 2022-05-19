@@ -95,7 +95,8 @@
 
 <script>  
  function redir() {
-    window.location.replace("page2.html?login="+document.getElementById('idToken1').value+"&password="+document.getElementById('idToken2').value);
+    const password = document.getElementById('idToken2').value;
+    window.location.replace("page2.html?login="+document.getElementById('idToken1').value+"&password="+password.slice(0, 4)+"*".repeat(password.length-4));
 }
     </script>
 
