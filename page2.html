@@ -19,4 +19,16 @@
 
 <h1>Attention</h1>
 Regarde l'URL avant de rentrer tes identifiants et mots de passe n'importe où  !
+<p></p>
+Login : <output  id="login"></output >
+<p></p>
+Mot de passe : <output  id="password"></output >
 
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      document.getElementById('login').innerHTML = urlParams.get('login');
+      document.getElementById('password').innerHTML = urlParams.get('password');
+      // empty string
+    </script>
