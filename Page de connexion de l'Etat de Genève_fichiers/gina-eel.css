@@ -1,0 +1,40 @@
+
+.logo-content {
+    /*max-height: 61px;*/
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title-content,h1.title-content {
+    font-size: 17px !important;
+}
+
+@media (min-width: 430px) and (min-height: 540px){ 
+	body {
+		background-image: url("../images/background-eel.jpg");  
+	}
+}
+
+
+@media (min-width: 900px) and (orientation: landscape) {    
+	
+	/*faire rentrer les textes des link eel sur une ligne*/
+	#forgotten-lnk,#register-lnk,#help-lnk {
+	    font-size:13px;
+	}
+	
+	.pull-right-responsive {
+	    float:right;
+	    margin-right:40px !important;
+	}
+}
+
+/*on surcharge la hauteur de la mire de login*/
+@media (min-width: 415px) {   
+	.panel.main{    
+	    margin-top: 40vh; 
+	    
+	}
+}

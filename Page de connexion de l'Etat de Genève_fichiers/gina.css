@@ -1,0 +1,410 @@
+body {
+    
+    /*background-color: #cccccc;*/
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+/* login à droite seulement pour ipad/tablette inversée ou pc. pour le reste c'est centré.*/
+.pull-right-responsive {
+}
+
+.container {
+     margin-right: 20px;
+    
+}
+
+.panel.main{
+        padding: 30px;
+}
+
+/* design commun à tous: pc - tablette tablette pro , petite resolution...  pour le centrage */
+@media (min-width: 415px) {
+
+   .container.gina {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;   
+    }
+
+    .panel.main{  
+        margin-left: auto;
+        margin-right: auto;
+        width: 360px;
+        margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
+        transform: translateY(-45%); /* tiré de la moitié de sa propre hauteur */
+    }
+}
+
+a {
+    color: #337ab7;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2c7bb8;
+    border-color: #2c7bb8;
+}
+
+.btn-primary[disabled], .btn-primary[disabled]:active, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-default[disabled]:hover, .btn-default[disabled].focus {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #999;
+}
+
+.btn-default {
+    color: #2c7bb8;
+    background-color: #fff;
+    border-color: #2c7bb8;
+}
+
+.dropdown-menu, .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .btn-primary, .btn-primary:focus, .btn-primary:hover, .btn-default, .btn-default:hover, .btn-default.focus, .btn-default.active:hover, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:hover, .open>.dropdown-toggle.btn-default:focus, .input-lg, .alert, .panel {
+    border-radius: 0px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+     color: #fff;
+    background-color: #2c7bb8;
+    border-color: #2c7bb8;
+}
+
+.btn-default:focus, .btn-default.focus, .btn-default:active:hover, .btn-default.active:hover, .open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open>.dropdown-toggle.btn-default.focus {
+     color: #fff;
+    background-color: #2c7bb8;
+    border-color: #2c7bb8;
+}
+
+.panel.main .page-header {
+    margin-top: 5px;
+    margin-bottom:0px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-default:hover, .btn-default.focus {
+    background: transparent;
+    color: #2c7bb8;
+    border-color: #2c7bb8;
+}
+
+.logo-content {
+    max-height: 95px;
+    max-width: 260px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.title-content,h1.title-content {
+    margin-top: 30px;
+    text-transform: none;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+}
+
+.main-logo-holder {
+    margin: 0px auto 40px;
+    text-align: left;
+    height:30px;
+}
+
+.header-geneva-id {
+    overflow: visible;
+    
+    padding:10px;
+    z-index: 99;
+    clear: both;
+    background-color: rgba(0,0,0,.6);
+    /*background: linear-gradient(to bottom, transparent 80%, white 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endColorstr='#99000000');
+    /*filter: linear-gradient(to bottom right,#002f4b,#dc4225);*/
+     color: #fff;
+}
+
+.footer  {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 99;
+    clear: both;
+    background-color: rgba(0,0,0,.6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endColorstr='#99000000');
+    color: #fff;
+}
+
+.footer-text{
+}
+
+.footer-text a{
+     color: #fff;
+}
+
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus,
+.btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #2c7bb8;
+    border-color: #2c7bb8;
+}
+
+
+/* user profil */
+ul#loginContent a i {
+    color: white;
+    background-color: #2C7BB8;
+}
+
+
+#mainNavHolder .container {
+        margin-left: 50px;
+        margin-right: 50px;
+        /*width: 95%*/
+        
+}
+
+@media (min-width: 900px) {
+    #mainNavHolder .container {
+        width: 95%
+    }
+}
+
+
+/* gina login */
+
+.pwd-warning-text {
+    margin-bottom: 50px;
+}
+
+#language-menu {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+}
+
+#language-menu li {
+    margin: 0;
+    padding: 0 4px 0 4px;
+    float: right;
+}
+
+.row.error .title-content {
+    color: #a94442;
+}
+
+.row.success .title-content {
+    color: #3a776c;
+}
+
+#idps {
+    position: relative;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#idps li {
+    border: 1px dotted #f6f6f6;
+    float: left;
+}
+
+#idps li:hover {
+    border-color: #2c7bb8;
+}
+
+.ginalogin-alert {
+        margin-top: 20px;
+}
+
+h1.titleError {
+    font-size: 18px !important;    
+}
+
+form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset; 
+}
+
+/* Masque le cadre gris clair autour de la mire de login (visible surtout avec un smartphone) */
+.panel {
+    box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
+.gina-alert-header {
+    z-index: 9999;      
+    margin-top: 0px;
+    position:relative;
+    margin-right:30px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.btn-default, .btn-default:focus, .btn-default:hover {
+	background-image: none;
+}
+
+.btn-default {
+	background-color: #fff;
+	color: #2c7bb8;
+}
+
+.btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+	background-color: #2c7bb8;
+	color: #fff;
+}
+
+.btn-primary {
+    background-image: none;
+	text-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn.active.focus {
+	border-color: #2c7bb8;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus, a:focus {
+	outline: none;
+}
+
+.form-control, .btn-primary, .form-control:focus, .btn.active, .btn:active {
+	box-shadow: none; 
+}
+
+.form-control:focus {
+	border-color: #2c7bb8;
+}
+
+.login .toggle-login-register {
+	margin-top: 5px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #337ab7;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.link-button:hover {
+    color: #23527c;
+}
+
+/*masque le footer lorsque la hauteur d'écran devient trop faible sur PC */
+@media (max-height:700px) {
+    #footer {
+        display:none;
+    }
+}
+
+/* smartphone */
+@media (max-height: 415px) {
+    .header-geneva-id {
+        display:none;
+    }
+
+    #footer {
+        display:none;
+    }
+
+    .panel.main {
+        padding: 5px;
+        margin-top: 40vh; /* poussÃ© de la moitiÃ© de hauteur de viewport */
+        transform: translateY(-45%); /* tirÃ© de la moitiÃ© de sa propre hauteur */
+    }
+
+    .main-logo-holder {
+        display:none;
+    }
+
+    .logo-content {
+        display:none;
+    }
+
+}
+
+
+/* smartphone */
+@media (max-width: 415px) {
+
+    /*masque le footer pour les devices de type smartphone ou smartphone en mode paysage*/
+    #footer {
+        display:none;
+    }
+
+    .panel.main {
+        padding: 5px;
+    }
+
+    .container {
+        margin-left: 15px;
+    }
+    
+}
+
+.btn-uppercase {
+	text-transform: none;
+}
+
+/* ipad or tablet vertical */
+@media screen and (min-width:640px) and (max-width:900px) and (min-height:900px) {
+
+}
+
+/* ipad or tablet vertical sans prendre en compte la hauteur */
+@media screen and (min-width:640px) and (max-width:900px)  {
+
+}
+
+/* ipad or tablet horizontal */
+@media (min-width: 900px) and (max-width:1300px) and (orientation: landscape) {
+  
+}
+
+/* ipad pro vertical */
+@media (min-width: 1000px) and (max-width:1050px)and (min-height:1300px) {
+  
+}
+
+/* ipad tablet pro horizontal */
+@media (min-width: 1300px) and (max-width: 1400px) and (max-height:1050px) {
+    
+}
+
+/*  devices de taille supérieurs au smartphone */
+@media (min-width: 430px) and (min-height: 700px){
+    body {
+        /*background: #e1e1e1;*/
+        background-image: url("../images/background.jpg");
+        /*background:#f4f4f4;*/
+        background-size: cover;
+        background-position: left;
+        overflow: hidden;
+        /* background: linear-gradient(#D3D8E8,white );*/
+    }
+}
+
+/* IE placeholder workaround (OPENAM-12035) */
+.loginwrapper {
+  position: relative;
+}
+
+.loginplaceholder {
+  position: absolute;
+  font-size:20px;
+  pointer-events: none;
+  left: 19px;
+  top: 10px;
+  transition: 0.1s ease all;
+  color:#999999;
+}
+
+.placeholderHidden {
+  display:none;
+}
+
+/* hide IE clear button in input */
+::-ms-clear {
+   display: none;
+}
