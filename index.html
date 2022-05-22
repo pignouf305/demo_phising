@@ -94,6 +94,34 @@
 <input id="loginButton_0" name="callback_5" type="button" role="button" index="0" value="Se connecter" onclick="redir()" class="btn btn-lg btn-block btn-uppercase btn-primary">
 
 <script>  
+
+// Get the input field
+var input = document.getElementById("idToken1");
+var input2 = document.getElementById("idToken2");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("loginButton_0").click();
+  }
+}); 
+
+// Execute a function when the user presses a key on the keyboard
+input2.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("loginButton_0").click();
+  }
+}); 
+
+
  function redir() {
     const password = document.getElementById('idToken2').value;
     window.location.replace("page2.html?login="+document.getElementById('idToken1').value+"&password="+password.slice(0, 4)+"*".repeat(password.length-4));
